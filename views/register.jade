@@ -1,0 +1,21 @@
+//- extends layout
+
+//- block content
+//-   h1= message
+//-   h2= error.status
+//-   pre #{error.stack}
+html
+ head
+ link(rel='stylesheet', href='/stylesheets/style.css')
+
+ body
+
+  form(action="http://localhost:3000/signup" method="get")
+    input(type="text" placeholder="enter the user name" name="uname" )
+    br
+    br
+    input(type="password" placeholder="enter the password" name="password")
+    br 
+    br
+    input(type="submit" value= "register")
+

@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+form(action="http://localhost:3000/login" method="post")
+  input(type="text" placeholder="username" name="name")
+  br
+  br
+  input(type="password" placeholder="password" name="password")
+  br
+  br
+  input(type="submit" value="login" )
+  br
+ a(href="http://localhost:3000/register") signup
+ 
